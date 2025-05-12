@@ -27,6 +27,13 @@ int main() {
     printf("B + D = %f\n", b + d);
     printf("C + D = %f\n", c + d);
 
+    printf("\nResultados das multiplicações:\n");
+    printf("A * B = %f\n", a * b);
+    printf("A * C = %f\n", a * c);
+    printf("A * D = %f\n", a * d);
+    printf("B * C = %f\n", b * c);
+    printf("B * D = %f\n", b * d);
+    printf("C * D = %f\n", c * d);
 
-    printf("%f", soma);
+    return 0;
 }

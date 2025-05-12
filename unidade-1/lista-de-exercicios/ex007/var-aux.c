@@ -8,16 +8,15 @@ int main(){
     printf("Digite x: \n");
     scanf("%d", &x);
     printf("Digite y: \n");
-    scanf("%d", y);
+    scanf("%d", &y);
 
-    aux = y;
-    x = aux;
-    y = x;
-
+    aux = x;
+    x = y;
+    y = aux;
 
     printf("X: %d  \n", x);
     printf("Y: %d \n", y);
-    printf("AUX: %d \n", aux);
 
+    return 0;
 
 }

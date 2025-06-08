@@ -2,19 +2,6 @@
 
 int main() {
     float a, b, c, d;
-    float soma;
-    //int multi;
-
-    // printf("Digite um valor para A : \n", a);
-    // scanf("%d" &a);
-    // printf("Digite um valor para B: \n", b);
-    // scanf("%d" &b);
-    // printf("Digite um valor para C: \n", c);
-    // scanf("%d" &c);
-    // printf("Digite um valor para D: \n", d);
-    // scanf("%d" &d);
-
-    //Soma
 
     printf("Digite quatro valores com espaço entre eles:");
     scanf("%f %f %f %f", &a, &b, &c, &d);

@@ -18,5 +18,4 @@ int main(){
     printf("Y: %d \n", y);
 
     return 0;
-
 }

@@ -14,11 +14,16 @@ int main() {
 	scanf("%f", &peso2);
 	printf("Altura da pessoa 2");
 	scanf("%f", &altura2);
-	
 	if(altura1>altura2){
-		printf("Pesoa mais alta: %s", nome1);
-	}else if(peso1>peso2){
-		printf("Pessoa mais pesada: %s")
+		printf("Pesoa mais alta1: %s", nome1);
+	}else if(altura2>altura1){
+		printf("Pessoa mais alta2: %s", nome2);
 	}
-	
+	if (peso1>peso2 )
+	{
+		printf("Pessoa mais pesada: %s", nome1);
+	}else if(peso2>peso1){
+		printf("Pessoa mais pesada: %s", nome2);
+	}
+	return 0;
 }

@@ -10,7 +10,7 @@ int main() {
     scanf("%d", &i3);
     if (i1<i3 && i1<i2)
     {
-        printf("HUguinho é o mais novo");
+        printf("Huguinho é o mais novo");
     }else if (i2<i1 && i2<i3)
     {
         printf("Zezinho é mais novo");

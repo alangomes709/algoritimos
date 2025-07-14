@@ -19,6 +19,4 @@ int main() {
         printf("Triângulo escaleno");
     }
     return 0;
-    
-    
 }

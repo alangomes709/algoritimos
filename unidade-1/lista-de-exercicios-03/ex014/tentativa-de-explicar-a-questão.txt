@@ -1,0 +1,41 @@
+14- Faça um algoritmo para o jogo pedra papel tesoura. O jogo deve imprimir 
+vitória, empate ou derrota conforme a opção que o jogador escolher e a opção 
+que for sorteada aleatoriamente pelo computador (usar o comando rand()%3 da 
+biblioteca stdlib que sorteia um valor de 0 a 2, sendo: 0-pedra, 1-papel ou 2
+tesoura). 
+
+Pedra papel tesoura com o computador
+
+O jogo deve imprimir 
+vitória, empate ou derrota conforme a opção que o jogador escolher e a opção 
+que for sorteada aleatoriamente pelo computador 
+
+passo 1: escolha do jogador, o que ele vai usar. Pedra? Papel? Tesoura?
+manda ele escolher
+
+passo 2:hora da batalha
+utilize switch case para comparar sua jogada com a jogada do computador.
+
+passo 3: comparando jogadas
+usei if else dentro de cada case para definir a vitória, derrota e empate de cada escolha
+
+se voce escolher pedra e a maquina pedra, vai dar empate.
+se você escolher pedra e a máquina tesoura, você ganha.
+se você escolher papel e a máquina tesoura, você perde.
+
+creio que tenha uma forma mais eficiente de fazer, mas essa é uma delas.
+talvez calculando o numero aleatorio assim que o programa roda, e comparando tudo de uma vez(não sei se é possível).
+
+//passo 1: escolha do jogador, o que ele vai usar. Pedra? Papel? Tesoura?
+//manda ele escolher
+
+//passo 2:hora da batalha
+// utilize switch case com a condição da escolha. 
+//Se o jogador escolher pedra, defina o que acontece
+// se voce escolher pedra e a maquina pedra 0, vai dar empate.
+// se você escolher pedra e a máquina tesoura 2, você ganha.
+// se você escolher pedra e a máquina papel 1, você perde.
+        
+//creio que há uma foroma mais eficiente de fazer
+//esse rand, ele é fácilmente previsível, ele escolhe somente uma vez,
+//independente de quanto voce rode o código vai dar a mesma coisa

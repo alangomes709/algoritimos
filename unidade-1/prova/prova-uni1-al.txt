@@ -1,0 +1,146 @@
+//Questão 1
+
+#include<stdio.h>
+int main() {
+	int hora;
+	printf("Dia ou noite? Digite a hora:");
+	scanf("%d", &hora);
+	
+	if(hora<0 || hora>23){
+		printf("Numero invalido");
+	}else if(hora>=6 && hora<18){
+		printf("Dia");
+	}else if(hora>=18 &&  hora<=23 || hora>=1){
+		printf("Noite");
+	}
+	return 0;
+}
+
+//Questão 2
+
+#include<stdio.h>
+int main() {
+	float imc, peso, alt;
+	printf("Digite peso");
+	scanf("%f", &peso);
+	printf("Digite altura");
+	scanf("%f", &alt);
+	imc=peso/(alt*alt);
+	printf("imc %f", imc);
+	if(imc<18.5){
+		printf("Abaixo do peso normal");
+	}else if(imc>=18.5 || imc<=24.9){
+		printf("Peso normal");
+	}
+	else if(imc>=25 || imc<=29.9){
+		printf("Excesso de peso");
+	}
+	else if(imc>=30 || imc<=34.9){
+		printf("Obesidade classe 1");
+	}
+	else if(imc>=35 || imc<=39.9){
+		printf("Obesidade classe 2");
+	}else if(imc>=40){
+		printf("Obesidade classe 3");
+	}
+	return 0;
+}
+
+//Questão 3
+
+#include<stdio.h>
+#include<math.h>
+int main() {
+	float num;
+	int escolha;
+	printf("Digite um número");
+	scanf("%f", &num);
+	printf("O que deseja calcular?\n");
+	printf("101-Quadrado do numero\n");
+	printf("102-Dobro do numero\n");
+	printf("103- 40%% do numero\n");
+	printf("Digite o código correspondente\n");
+	scanf("%d", &escolha);
+	switch(escolha){
+		case 101:
+			printf("Quadrado: %f", num*num);
+			break;
+		case 102:
+			printf("Dobro: %f", num*2);
+			break;
+		case 103:
+			printf("40%: %f", num*0.4);
+			break;
+		default:
+			printf("Código digitado não consta na tabela!");
+			break;
+	}	
+	return 0;
+}
+
+//Questão 4
+
+#include<stdio.h>
+int main() {
+	char nome[100], sind;
+	float valor;
+	int escolha;
+	printf("Digite seu nome\n");
+	scanf(" %s", &nome);
+	printf("Qual especialista deseja consultar?\n");
+	printf("001-Psicologo\n");
+	printf("002-Médico especialista\n");
+	printf("003-Ortopedista\n");
+	printf("004-Nutricionista\n");
+	scanf("%d", &escolha);
+	printf("Sindicalizado?\n S-sim e N-não\n");
+	scanf(" %c", &sind);
+	switch(escolha) {
+		case 001:
+			if(sind=='S') {
+				printf("Nome: %s Valor da consulta: %f", nome, valor=((150*0.3)-150)*(-1));
+			}else if(sind=='N'){
+				printf("Nome: %s Valor da consulta: %f", nome, valor=150);
+			}else if(sind!=0||sind!=1)
+			{
+				printf("Sinddica invalido");
+			}
+			break;
+		case 002:
+			if(sind=='S') {
+				printf("Nome: %s Valor da consulta: %f", nome, valor=((125*0.2)-125)*(-1));
+			}else if(sind=='N'){
+				printf("Nome: %s Valor da consulta: %f", nome, valor=125);
+			}else if(sind!=0||sind!=1)
+			{
+				printf("Sinddica invalido");
+			}
+			break;
+		case 003:
+			if(sind=='S') {
+				printf("Nome: %s Valor da consulta: %f", nome, valor=((200*0.1)-200)*(-1));
+			}else if(sind=='N'){
+				printf("Nome: %s Valor da consulta: %f", nome, valor=200);
+			}else if(sind!=0||sind!=1)
+			{
+				printf("Sinddica invalido");
+			}
+			break;
+		case 004:
+			if(sind=='S') {
+				printf("Nome: %s Valor da consulta: %f", nome, valor=((150*0.25)-150)*(-1));
+			}else if(sind=='N'){
+				printf("Nome: %s Valor da consulta: %f", nome, valor=150);
+			}else if(sind!=0||sind!=1)
+			{
+				printf("Sinddica invalido");
+			}
+			break;
+			
+		default:
+			printf("Código do especialista inválido");
+			break;
+	}
+	
+	return 0;
+}

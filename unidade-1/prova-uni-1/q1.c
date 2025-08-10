@@ -9,7 +9,8 @@ int main() {
 	}else if(hora>=6 && hora<18){
 		printf("Dia");
 	}else if(hora>=18 && hora<=23 || hora>=1){
-	//}else if(hora>=18 && hora<=23 || hora>=0){ daria certo assim :<
+		//}else if(hora>=18 && hora<=23 || hora>=0){ daria certo assim :<
+		//}else { ou assim ;-;
 		printf("Noite");
 	}
 	return 0;

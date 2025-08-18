@@ -1,15 +1,9 @@
 #include<stdio.h>
 int main() {
-    int num, i;
-    printf("Digite num ");
-    scanf("%d", &num);
-    for ( i = 0; i < num; i++)
+    int i, f=5;
+    for (i = 1; i <= 10; i++)
     {
-        for (size_t j = 0; j < num; j++)
-        {
-            printf("%d ", i * j);
-        }
-        printf("\n");
+        printf("5 * %d = %d \n", i, i*f);
     }
-    
+    return 0;
 }

@@ -22,3 +22,5 @@ int main()
         }
     }
 }
+
+//strncmp(s1, s2, 10);

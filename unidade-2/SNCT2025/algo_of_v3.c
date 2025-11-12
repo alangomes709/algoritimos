@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#include<windows.h>
+// #include<windows.h>
 
 int main(){
 	char resp;
-	SetConsoleOutputCP(CP_UTF8);
+	// SetConsoleOutputCP(CP_UTF8);
     srand(time(NULL));
 	do{
 

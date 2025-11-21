@@ -20,7 +20,7 @@ int main() {
 	if(media>=7 && pt>5 && mat>5 && conGer>5){
 		printf("Aprovado");
 	}else{
-		printf("Desaprovado");
+		printf("Reprovado");
 	}
 	return 0;
 }

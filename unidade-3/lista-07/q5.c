@@ -9,17 +9,12 @@ int main(){
 }
 
 int indice_maximo(int v[], int n){
-    int i, j, maior=0;
-    for ( i = 0; i < n; i++)
+    int i, j, maior=v[0];
+    for ( i = 1; i < n; i++)
     {
-        for ( j = i; j < n; j++)
+        if (v[i]>maior)
         {
-            if (v[i]>v[j])
-            {
-                maior=v[i];
-                v[i]=v[j];
-                v[j]=maior;
-            }
+            maior=v[i];
         }
         
     }

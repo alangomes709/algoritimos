@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int maior_elemento(int v[], int n);
+int menor_elemento(int v[], int n);
 
 int main(){
     int i;
@@ -11,28 +11,28 @@ int main(){
         printf("Elemento pos %d:  ", i);
         scanf("%d", &algo[i]);
     }
-    printf("Os elementos máximos encontrados no vetor: ");
-    maior_elemento(algo, tamVetor);
+    printf("Os elementos mínimos encontrados no vetor: ");
+    menor_elemento(algo, tamVetor);
     printf("\n");
 
     return 0;
 }
 
-int maior_elemento(int v[], int n){
+int menor_elemento(int v[], int n){
     int i;
-    int maior=v[0];
+    int menor=v[0];
     for ( i = 1; i < n; i++)
     {
-        if (v[i]>maior)
+        if (v[i]<menor)
         {
-            maior=v[i];
+            menor=v[i];
         }
     }
     for ( i = 0; i < n; i++)
     {
-        if (v[i]==maior)
+        if (v[i]==menor)
         {
-            printf("%d ", maior);
+            printf("%d ", menor);
         }
     }
     return 0;
